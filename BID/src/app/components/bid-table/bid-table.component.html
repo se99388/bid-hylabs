@@ -1,0 +1,27 @@
+
+<div id="myTable">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Customer name</th>
+                    <th>Date</th>
+                    <th>Seq_ID</th>
+                    <th>Sequence</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let BD of bidsDataOfTable">
+                    <td>{{BD.customer}}</td>
+                    <td>{{BD.date}}</td>
+                    <td><div class="seqIdRow">{{BD.seq_id }}</div></td>
+                    <td>
+                        <div class="seqRow">
+                            {{BD.sequence }}
+                        </div>
+                    </td>
+    
+    
+                </tr>
+            </tbody>
+        </table>
+    </div>
